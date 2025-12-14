@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAVINAYAA V - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background Graphics -->
+    <div class="background-graphics">
+        <div class="gradient-mesh"></div>
+        <div class="geometric-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Bubble Container -->
+    <div class="bubble-container" id="bubbleContainer"></div>
+
+    <!-- Microbe Cursor Effect -->
+    <div class="cursor-microbes" id="cursorMicrobes"></div>
+
+    <!-- Scroll Progress Track -->
+    <div class="scroll-track" id="scrollTrack">
+        <div class="scroll-track-line"></div>
+        <div class="scroll-track-progress" id="scrollProgress"></div>
+        <div class="scroll-track-dots">
+            <div class="scroll-dot" data-section="hero" title="Hero"></div>
+            <div class="scroll-dot" data-section="summary" title="Summary"></div>
+            <div class="scroll-dot" data-section="skills" title="Skills"></div>
+            <div class="scroll-dot" data-section="experience" title="Experience"></div>
+            <div class="scroll-dot" data-section="projects" title="Projects"></div>
+            <div class="scroll-dot" data-section="education" title="Education"></div>
+            <div class="scroll-dot" data-section="achievements" title="Achievements"></div>
+            <div class="scroll-dot" data-section="certifications" title="Certifications"></div>
+            <div class="scroll-dot" data-section="connect" title="Connect"></div>
+        </div>
+        </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">KV</a>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#summary" class="nav-link" data-section="summary"><i class="fas fa-user"></i><span>Summary</span></a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-project-diagram"></i><span>Projects</span></a></li>
+                <li><a href="#education" class="nav-link" data-section="education"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+                <li><a href="#achievements" class="nav-link" data-section="achievements"><i class="fas fa-trophy"></i><span>Achievements</span></a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications"><i class="fas fa-certificate"></i><span>Certifications</span></a></li>
+                <li><a href="#connect" class="nav-link" data-section="connect"><i class="fas fa-envelope"></i><span>Connect</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-name animate-fade-in">KAVINAYAA V</h1>
+            <p class="hero-title animate-fade-in-delay">Computer Science Engineering Student</p>
+            <p class="hero-typing animate-fade-in-delay-2">
+                <span class="typing-text" id="typingText"></span>
+                <span class="typing-cursor">|</span>
+            </p>
+            <p class="hero-subtitle animate-fade-in-delay-3">Exploring Advanced Machine Learning Solutions for Healthcare Analytics</p>
+            <div class="hero-links animate-fade-in-delay-4">
+                <a href="https://github.com/Kavinayaa1020" target="_blank" class="hero-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kavinayaa2007/" target="_blank" class="hero-link"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kavinayaa1020@gmail.com" class="hero-link"><i class="fas fa-envelope"></i></a>
+                
+                    </div>
+                </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Summary</h2>
+            <div class="summary-content animate-on-scroll">
+                <p>Second-year CSE student exploring advanced machine learning solutions for healthcare analytics. Strong problem-solving skills in DSA and open to collaboration on practical software development projects.</p>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">PyTorch</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem-solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Time Management</span>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Intern</h3>
+                        <h4>Sri Sairam Techno Incubator Foundation</h4>
+                        <span class="timeline-date">Aug 2025 – Sep 2025</span>
+                        <ul class="timeline-details">
+                            <li>Gained proficiency in machine learning and applied it to real-world healthcare projects.</li>
+                            <li>Explored data preprocessing, model training, and evaluation techniques for ML applications.</li>
+                            <li>Developed a CNN model for diabetic retinopathy detection from retinal images, achieving 85% accuracy and improving early diagnosis.</li>
+                            <li>Implemented model evaluation and validation techniques, including confusion matrix and accuracy metrics, ensuring reliable performance on unseen retinal images.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-icon"><i class="fas fa-ambulance"></i></div>
+                    <h3>RapidRescue</h3>
+                    <p>Built an AI-enabled emergency response system with one-tap SOS, smart ambulance routing, and real-time tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Supabase</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon"><i class="fas fa-university"></i></div>
+                    <div class="education-content">
+                        <h3>B.E Computer Science</h3>
+                        <h4>Sri Sairam Engineering College</h4>
+                        <span class="education-date">Aug 2024 - Present</span>
+                        <p class="education-grade">CGPA: 9.45/10</p>
+                    </div>
+                </div>
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon"><i class="fas fa-school"></i></div>
+                    <div class="education-content">
+                        <h3>AISSCE</h3>
+                        <h4>Sree Gokulam Public School</h4>
+                        <span class="education-date">Mar 2023 - Mar 2024</span>
+                        <p class="education-grade">91.8%</p>
+                    </div>
+                    </div>
+                <div class="education-item animate-on-scroll">
+                    <div class="education-icon"><i class="fas fa-school"></i></div>
+                    <div class="education-content">
+                        <h3>AISSE</h3>
+                        <h4>Sree Gokulam Public School</h4>
+                        <span class="education-date">Apr 2021 - Apr 2022</span>
+                        <p class="education-grade">97.2%</p>
+                    </div>
+                    </div>
+                        </div>
+                    </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Computer Science Department Topper</h3>
+                    <p>Skillrack coding platform - Solved 1500+ problems in C/C++/Python</p>
+                </div>
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <h3>Centum Scorer</h3>
+                    <p>Language paper in Class 10</p>
+                </div>
+                <div class="achievement-card animate-on-scroll">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Mathematics Subject Topper</h3>
+                    <p>Class 12</p>
+            </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>The Joy of Computing Using Python</h3>
+                    <p>NPTEL</p>
+                    <span class="cert-grade">92%</span>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Programming in Java</h3>
+                    <p>NPTEL</p>
+                    <span class="cert-grade">97%</span>
+                    </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Networking Basics</h3>
+                    <p>CISCO</p>
+                    </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Agentic Automation Developer</h3>
+                    <p>UiPath</p>
+                    </div>
+                    </div>
+                    </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="connect" class="section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Connect</h2>
+            <div class="connect-content animate-on-scroll">
+                <p>Let's connect and collaborate on exciting projects!</p>
+                <div class="connect-links">
+                    <a href="https://github.com/Kavinayaa1020" target="_blank" class="connect-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kavinayaa2007/" target="_blank" class="connect-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:kavinayaa1020@gmail.com" class="connect-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    
+            </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KAVINAYAA V. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
